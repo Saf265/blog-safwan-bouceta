@@ -1,10 +1,68 @@
 ---
-title: Titre du blog 1
+title: Comment centrer une div (3 moyens)
 description: La description du blog
 publishedAt: "11/10/2024"
-published: false
+published: true
 ---
 
-Salut voici le contenue du blog
+## Centrer une div en CSS
 
-## Titre 2
+Il existe plusieurs façons de centrer une `div` en CSS. Voici trois méthodes courantes :
+
+### 1. Utiliser Flexbox
+
+La première méthode consiste à utiliser Flexbox. Cela permet de centrer facilement une `div` à la fois horizontalement et verticalement.
+
+```css
+.center-flex {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+```
+
+```html
+<div className="center-flex">
+  <div>Je suis centré avec Flexbox !</div>
+</div>
+```
+
+### 2. Utiliser Grid
+
+La deuxième méthode utilise CSS Grid, qui est également très efficace pour centrer des éléments.
+
+```css
+.center-grid {
+  display: grid;
+  place-items: center; /* Centre horizontalement et verticalement */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+```
+
+```html
+<div className="center-grid">
+  <div>Je suis centré avec Grid !</div>
+</div>
+```
+
+### 3. Utiliser les Marges Automatiques
+
+La troisième méthode consiste à utiliser des marges automatiques pour centrer une `div` horizontalement.
+
+```css
+.center-margin {
+  width: 50%; /* Largeur de la div */
+  margin: 0 auto; /* Marges automatiques pour centrer horizontalement */
+}
+```
+
+```html
+<div className="center-margin">
+  Je suis centré avec des marges automatiques !
+</div>
+```
+
+### Conclusion
+
+Ces trois méthodes vous permettent de centrer une `div` en CSS. Choisissez celle qui convient le mieux à votre mise en page et à vos besoins.
