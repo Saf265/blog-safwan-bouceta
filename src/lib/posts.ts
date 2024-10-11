@@ -45,7 +45,7 @@ export const getPosts = async () => {
 
     posts.push({
       ...safeData.data,
-      slug: fileName.replace(".mdx", ""),
+      slug: fileName.replace(/^\d+-/, "").replace(".mdx", ""),
       content: frontmatter.content,
     });
   }
