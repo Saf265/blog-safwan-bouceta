@@ -9,7 +9,7 @@ export const Footer = () => {
       </div>
       <div className="mr-2 flex-none">
         <Link
-          href="/https://x.com/Safwan1978774"
+          href="https://x.com/Safwan1978774"
           target="_blank"
           className="btn btn-circle btn-ghost"
         >
