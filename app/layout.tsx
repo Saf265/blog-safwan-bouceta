@@ -19,8 +19,6 @@ export const metadata: Metadata = {
   title: "Tech & Développement - Articles et Astuces pour Développeurs",
   description:
     "Découvrez les derniers articles et astuces sur la technologie, le développement web, et l'innovation. Idéal pour développeurs et passionnés de tech.",
-  keywords:
-    "technologie, développement web, articles tech, innovation, astuces développeurs",
 };
 
 export default function RootLayout({

@@ -8,12 +8,12 @@ export const Mdx = ({ children }: { children: string }) => {
     <Suspense fallback={<div>Loading...</div>}>
       <MDXRemote
         source={children}
-        components={MDX_COMPONENTS}
         options={{
           mdxOptions: {
             rehypePlugins: rehypePlugin,
           },
         }}
+        components={MDX_COMPONENTS}
       />
     </Suspense>
   );

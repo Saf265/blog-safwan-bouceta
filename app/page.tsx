@@ -6,15 +6,12 @@ export default async function Home() {
   return (
     <>
       <div className="grid grid-cols-1 gap-4">
-        {fileNames.map((fileName) => (
-          <div className="card bg-base-100 shadow-xl" key={fileName.slug}>
+        {fileNames.map((post) => (
+          <div className="card bg-base-100 shadow-xl" key={post.slug}>
             <div className="card-body">
-              <h2 className="card-title">{fileName.title}</h2>
-              <p>Date: {fileName.publishedAt}</p>
-              <Link
-                href={`/posts/${fileName.slug}`}
-                className="btn btn-primary"
-              >
+              <h2 className="card-title">{post.title}</h2>
+              <p>Date: {post.publishedAt}</p>
+              <Link href={`/posts/${post.slug}`} className="btn btn-primary">
                 Lire plus
               </Link>
             </div>
