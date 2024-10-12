@@ -1,5 +1,5 @@
 import { getPosts } from "@/lib/posts";
-import Link from "next/link"; // Ajout de l'importation du composant Link
+import Link from "next/link";
 
 export default async function Home() {
   const fileNames = await getPosts();
@@ -10,14 +10,13 @@ export default async function Home() {
           <div className="card bg-base-100 shadow-xl" key={fileName.slug}>
             <div className="card-body">
               <h2 className="card-title">{fileName.title}</h2>
-              <p>Date: {fileName.publishedAt}</p> {/* Ajout de la date */}
+              <p>Date: {fileName.publishedAt}</p>
               <Link
                 href={`/posts/${fileName.slug}`}
                 className="btn btn-primary"
               >
                 Lire plus
-              </Link>{" "}
-              {/* Lien vers le post */}
+              </Link>
             </div>
           </div>
         ))}
