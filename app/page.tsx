@@ -21,7 +21,6 @@ export default async function Home() {
           </div>
         ))}
       </div>
-      {/* <button className="btn btn-primary">Click me!</button> */}
     </>
   );
 }

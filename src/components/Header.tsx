@@ -11,7 +11,12 @@ export const Header = () => {
       <div className="mr-1 flex-none">
         <label className="swap swap-rotate mr-2">
           {/* this hidden checkbox controls the state */}
-          <input type="checkbox" className="theme-controller" value="dark" />
+          <input
+            type="checkbox"
+            id="input"
+            className="theme-controller"
+            value="dark"
+          />
 
           {/* sun icon */}
           <svg
